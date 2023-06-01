@@ -2,6 +2,9 @@ package com.daniCode.AppGameRunner;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+
+import java.util.Arrays;
+
 public class HelloWordSpringFW {
     public  static void main(String[] args){
         /*
@@ -21,6 +24,15 @@ public class HelloWordSpringFW {
 
         // can retrieve beans with multiple option for example by class type
         //System.out.println(context.getBean(Person.class));
+
+        //if I run what is above it would fail because there are mora than just one bean Person.class it can be solved on the bean creation using @Primary or @Qualifier(qualifiername)
+        System.out.println(context.getBean(Person.class));
+        System.out.println(context.getBean(Address.class));
+
+        //to list all beans (using functional programing)
+        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+
+
 
     }
 }
