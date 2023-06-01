@@ -1,8 +1,8 @@
 package com.daniCode.AppGameRunner.game;
 
 public class GameRunner {
-    MarioGame game;
-    public GameRunner(MarioGame game) {
+    SuperContraGame game;
+    public GameRunner(SuperContraGame game) {
         this.game = game;
     }
 
