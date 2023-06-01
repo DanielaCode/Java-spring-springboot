@@ -1,5 +1,8 @@
 package com.daniCode.AppGameRunner.gameWithSpring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SuperContraGame implements GammingConsole {
     public void left() {
         System.out.println("go");
