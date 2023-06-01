@@ -14,5 +14,7 @@ public class HelloWordSpringFW {
         //throw this context I can access and use Beans for example name:
         var beanName = context.getBean("name");
         System.out.println(beanName);
+        System.out.println(context.getBean("person"));
+
     }
 }
