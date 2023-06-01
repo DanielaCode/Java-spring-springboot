@@ -1,8 +1,7 @@
-package com.daniCode.AppGameRunner;
+package com.daniCode.AppGameRunner.HelloWorldSpring;
+
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-
 import java.util.Arrays;
 
 public class HelloWordSpringFW {

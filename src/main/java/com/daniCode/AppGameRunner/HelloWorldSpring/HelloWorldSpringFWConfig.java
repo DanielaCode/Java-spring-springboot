@@ -1,4 +1,4 @@
-package com.daniCode.AppGameRunner;
+package com.daniCode.AppGameRunner.HelloWorldSpring;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
