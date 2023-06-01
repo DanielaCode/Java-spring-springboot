@@ -9,7 +9,7 @@ public class AppGamingBasicJava {
         //GammingConsole game = new SuperContraGame();
         GammingConsole game = new PacmanGame();//object creation
 
-        GameRunner gr = new GameRunner(game);//object creation + wiring dependencies we are injecting an object to game runner 
+        GameRunner gr = new GameRunner(game);//object creation + wiring dependencies we are injecting an object to game runner
         gr.run();
     }
 
