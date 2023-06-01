@@ -1,16 +1,15 @@
 package com.daniCode.AppGameRunner;
 
-import com.daniCode.AppGameRunner.game.GameRunner;
-import com.daniCode.AppGameRunner.game.MarioGame;
-import com.daniCode.AppGameRunner.game.SuperContraGame;
+import com.daniCode.AppGameRunner.game.*;
 
 public class AppGamingBasicJava {
 
     public static void main(String[] args){
-        MarioGame marioGame = new MarioGame();
-        SuperContraGame superContraGame = new SuperContraGame();
+        //GammingConsole game = new MarioGame();
+        //GammingConsole game = new SuperContraGame();
+        GammingConsole game = new PacmanGame();
 
-        GameRunner gr = new GameRunner(superContraGame);
+        GameRunner gr = new GameRunner(game);
         gr.run();
     }
 

@@ -1,6 +1,6 @@
 package com.daniCode.AppGameRunner.game;
 
-public class SuperContraGame {
+public class SuperContraGame implements GammingConsole{
     public void left() {
         System.out.println("go");
     }

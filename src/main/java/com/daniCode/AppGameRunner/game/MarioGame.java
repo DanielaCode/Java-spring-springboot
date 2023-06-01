@@ -1,6 +1,6 @@
 package com.daniCode.AppGameRunner.game;
 
-public class MarioGame {
+public class MarioGame implements GammingConsole{
     public void left() {
         System.out.println("Run");
     }
