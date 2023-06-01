@@ -1,11 +1,12 @@
 package com.daniCode.AppGameRunner.gameWithSpring;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
     GammingConsole game;
-    public GameRunner(GammingConsole game) {
+    public GameRunner(@Qualifier("PacmanGameQualifier") GammingConsole game) {
         this.game = game;
     }
 
