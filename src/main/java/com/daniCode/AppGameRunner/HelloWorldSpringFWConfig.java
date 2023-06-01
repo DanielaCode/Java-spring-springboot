@@ -23,4 +23,16 @@ public class HelloWorldSpringFWConfig {
     public Person person(){
         return new Person("sofi",17);
     }
+    @Bean(name = "person2") //for default the bean name is the method name, but we can use this argument to customize it
+    public Person persona(){
+        return new Person("sofi",17);
+    }
+    @Bean(name = "person3")//can use beans to create new ones by two approaches
+    public Person personCallMethod(){
+        return new Person(name(),age());
+    }
+    @Bean(name = "person4")
+    public Person personParameterMethod(String name, int age){
+        return new Person(name,age);
+    }
 }
