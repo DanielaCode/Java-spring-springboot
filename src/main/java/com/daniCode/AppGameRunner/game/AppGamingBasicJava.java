@@ -1,6 +1,7 @@
-package com.daniCode.AppGameRunner;
+package com.daniCode.AppGameRunner.game;
 
 import com.daniCode.AppGameRunner.game.*;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppGamingBasicJava {
 
